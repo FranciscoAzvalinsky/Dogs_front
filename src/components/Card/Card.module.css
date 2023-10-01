@@ -1,0 +1,36 @@
+.divCard{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 360px;
+    height: 425px;
+    margin-top: 5.13%;
+    background: rgb(209, 170, 111);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.divCard:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.92);
+}
+
+.text{
+    font-family: Quicksand;
+    color: white;
+    font-size: 20px;
+}
+
+.img{
+    margin-top: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 200px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}

@@ -1,0 +1,154 @@
+.divDiv{
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -5px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 99.92%;
+    height: 61px;
+    background: rgb(190, 153, 97);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.label{
+  font-family: Jambo;
+  color: white;
+  font-weight: lighter;
+  margin-top: 45px;
+  font-size: 40px;
+  margin-left: 267px;
+}
+
+.patita{
+  font-family: canDog;
+  color: rgb(196, 113, 20);
+  font-weight: lighter;
+  margin-top: 72px;
+  font-size: 65px;
+  margin-left: 10px;
+}
+
+.divSelect{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    margin-left: 17.8%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.select{
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.divTemps{
+  position: absolute;
+  top: 50px;
+  right: 380px;
+}
+
+.li{
+  font-family: Quicksand;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgb(196, 113, 20);
+  color: white;
+  padding: 3px
+}
+
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  transform: scale(.9);
+  transition: .2s linear;
+}
+
+.icon path {
+  stroke: #000;
+  stroke-width: 2px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.ulTemps{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width:max-content
+}
+
+
+
+.materialCheckbox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 7px;
+  }
+  
+  .materialCheckbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 2px solid #454B00;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  
+  .materialCheckbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #2F3300;
+    border-color: #454B00;
+  }
+  
+  .materialCheckbox input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .materialCheckbox input[type="checkbox"]:focus ~ .checkmark {
+    box-shadow: 0 0 0 2px #dfec5065;
+  }
+  
+  .materialCheckbox:hover input[type="checkbox"] ~ .checkmark {
+    border-color: #C3CF34;
+  }
+  
+  .materialCheckbox input[type="checkbox"]:disabled ~ .checkmark {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .materialCheckbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+    border-color: #4d4d4d;
+  }
+  
