@@ -1,6 +1,8 @@
 import axios from 'axios';
 import style from './Detail.module.css';
 
+import {URL} from '../../config'
+
 import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 
@@ -12,7 +14,7 @@ export default function Detail () {
 
     //pedido de la data para el renderizado
      useEffect(() => {
-        axios(`http://localhost:3001/dogs/${id}`).then(
+        axios(`${URL}/dogs/${id}`).then(
             ({data}) => {
                 if (data.name) {
                     setCharacter(data);

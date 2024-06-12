@@ -1,4 +1,5 @@
 import './App.css';
+import {URL} from './config'
 
 
 //import de hooks y funciones
@@ -28,7 +29,7 @@ function App({allDogs, loadDogs, loadTemperaments, loadedDogs, loadedDogsSwitch}
   useEffect (() => {
     const cargarDogs = async () => {
       try {
-        const response = await axios('http://localhost:3001/dogs')
+        const response = await axios(`${URL}/dogs`)
         if (response.data){
           dispatch(loadDogs(response.data));
         } else {
@@ -47,7 +48,7 @@ function App({allDogs, loadDogs, loadTemperaments, loadedDogs, loadedDogsSwitch}
   useEffect(() => {
     const cargarTemperaments = async () => {
       try{
-        const response = await axios('http://localhost:3001/temperaments')
+        const response = await axios(`${URL}/temperaments`)
         if (response.data){
           dispatch(loadTemperaments(response.data))
         } else {
@@ -80,7 +81,7 @@ function App({allDogs, loadDogs, loadTemperaments, loadedDogs, loadedDogsSwitch}
     reference_image_id: dogReceived.reference_image_id
   }
   try {
-    const URL='http://localhost:3001/dogs'
+    const URL=`${URL}/dogs`
     await axios.post(URL, dogSend);
     dispatch(loadedDogs());
   } catch (error) {
